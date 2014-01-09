@@ -1,6 +1,11 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH"
 
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh¬
+
+export JAVA_HOME=`/usr/libexec/java_home -v 1.7`¬                                               
+export MAVEN_OPTS='-Xms128M -Xmx256M -XX:PermSize=128M -XX:MaxPermSize=256M'¬                                                           
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
